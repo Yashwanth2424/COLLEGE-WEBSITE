@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Unit_2_Page</title>
+    <link rel="stylesheet" href="unit_page.css">
+    <style>
+        body {
+          background-color: white;
+          color: black;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="bg-container">
+        <div class="left-container fixed-top" id="leftContainer">
+            <div  class="topics-section-heading-container" >
+                <h1 style="padding-left: 20px; padding-top: 8px;padding-right: 18px; font-size: 28px; text-decoration: underline;">UNIT-2</h1>
+                <div class="toggle-container" onclick="changeColor()" >
+                    <input type="checkbox" class="toggle-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 142" class="toggle">
+                      <path d="M71 142C31.7878 142 0 110.212 0 71C0 31.7878 31.7878 0 71 0C110.212 0 119 30 146 30C173 30 182 0 221 0C260 0 292 31.7878 292 71C292 110.212 260.212 142 221 142C181.788 142 173 112 146 112C119 112 110.212 142 71 142Z" class="toggle-background"></path>
+                      <rect rx="6" height="64" width="12" y="39" x="64" class="toggle-icon on"></rect>
+                      <path d="M221 91C232.046 91 241 82.0457 241 71C241 59.9543 232.046 51 221 51C209.954 51 201 59.9543 201 71C201 82.0457 209.954 91 221 91ZM221 103C238.673 103 253 88.6731 253 71C253 53.3269 238.673 39 221 39C203.327 39 189 53.3269 189 71C189 88.6731 203.327 103 221 103Z" fill-rule="evenodd" class="toggle-icon off"></path>
+                      <g filter="url('#goo')">
+                        <rect fill="#fff" rx="29" height="58" width="116" y="42" x="13" class="toggle-circle-center"></rect>
+                        <rect fill="#fff" rx="58" height="114" width="114" y="14" x="14" class="toggle-circle left"></rect>
+                        <rect fill="#fff" rx="58" height="114" width="114" y="14" x="164" class="toggle-circle right"></rect>
+                      </g>
+                      <filter id="goo">
+                        <feGaussianBlur stdDeviation="10" result="blur" in="SourceGraphic"></feGaussianBlur>
+                        <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+                      </filter>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#Perceptron" style="color: white; text-decoration: none;">
+                     The Perceptron
+                    </a>
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#Perceptron"><p>Bio-inspired Learning</p></a>
+                    <a href="#Perceptron"><p>The Perceptron Algorithm</p></a>
+                    <a href="#Perceptron"><p>Geometric Interpretation</p></a>
+                    <a href="#Perceptron"><p>Interpreting Perceptron Weights</p></a>
+                    <a href="#Perceptron"><p>Perceptron Convergence & <br> Linear Separability</p></a>
+                    <a href="#Perceptron"><p>Improved Generalization</p></a>
+                    <a href="#Perceptron"><p>Limitations of the Perceptron</p></a>
+                </ul>
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#PracticalIssues" style="color: white; text-decoration: none;">
+                        Practical Issues
+                    </a>
+                    
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#PracticalIssues"><p>Importance of Good Features</p></a>
+                    <a href="#PracticalIssues"><p>Irrelevant and Redundant Features</p></a>
+                    <a href="#PracticalIssues"><p>Feature Pruning and Normalization</p></a>
+                    <a href="#PracticalIssues"><p>Combinatorial Feature Explosion</p></a>
+                    <a href="#PracticalIssues"><p>Evaluating Model Performance</p></a>
+                    <a href="#PracticalIssues"><p>Cross-Validation</p></a>
+                    <a href="#PracticalIssues"><p>Hypothesis Testing and Statistical Significance</p></a>
+                    <a href="#PracticalIssues"><p>Debugging Learning Algorithms</p></a>
+                    <a href="#PracticalIssues"><p>Bias-Variance Tradeoff</p></a>
+
+                </ul>
+            </div>
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#LinearModels" style="color: white; text-decoration: none;">
+                        Linear Models
+                    </a>
+                    
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#LinearModels"><p>Optimization Framework</p></a>
+                    <a href="#LinearModels"><p>Convex Surrogate Loss Functions</p></a>
+                    <a href="#LinearModels"><p>Weight Regularization</p></a>
+                    <a href="#LinearModels"><p>Optimization and Gradient Descent</p></a>
+                    <a href="#LinearModels"><p>Support Vector Machines (SVMs)</p></a>
+                </ul>
+            </div>
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-danger" style="width: 200px;">
+                    <a href="DS-04 SIA UNIT-2.pdf" target="_blank" style="color: white; text-decoration: none;">
+                     SIA publications Material
+                    </a>
+                    
+                </button>
+            </div>
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;" style="width: 200px;">
+                
+                <button type="button" class="btn btn-danger">
+                    <a href="UNIT-2-ML__RP.pdf" target="_blank" style="color: white; text-decoration: none;">
+                     RAHUL publications Material
+                    </a>
+                    
+                </button>
+                
+            </div>
+
+        </div>
+
+        <div class="right-container" id="rightContainer">
+                <div id="Perceptron">
+                    <h1 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px;">The Perceptron</h1>
+
+                    <p><span class="sub-heading">Bio-inspired Learning: <br></span> The perceptron was inspired by the way neurons in the brain process information. A neuron receives inputs from other neurons through synaptic connections, each with a certain strength or weight. The neuron combines these weighted inputs and generates an output signal if the combined input exceeds a certain threshold.
+                         The perceptron model mimics this behavior by taking weighted linear combinations of the input features and applying an activation function to determine the output.
+                    </p>
+                    <p><span class="sub-heading">The Perceptron Algorithm: <br></span> The perceptron algorithm is an iterative process that learns the weights of the perceptron model from labeled training data. It starts with random weight values and then updates the weights based on misclassified examples. For each misclassified example, the weights are adjusted in the direction that would have correctly classified that example.
+                         This process continues until the algorithm converges or a stopping criterion is met.
+                   </p>
+                   <p><span class="sub-heading">Geometric Interpretation: <br></span> The perceptron can be visualized geometrically as finding a hyperplane (a line in 2D or a plane in 3D) that separates the data into different classes. The weights of the perceptron determine the orientation and position of this hyperplane.
+                     The goal of the perceptron algorithm is to find the hyperplane that best separates the classes in the training data.
+                    </p>
+                    <p><span class="sub-heading">Interpreting Perceptron Weights:<br> </span> The weights in a perceptron represent the importance or influence of each input feature on the output. Features with higher weights have a greater influence on the output, while features with lower weights have less impact.
+                         The sign of the weight indicates whether the feature contributes positively or negatively to the output.
+                    </p>
+                    <p><span class="sub-heading">Perceptron Convergence and Linear Separability:<br> </span>The perceptron algorithm is guaranteed to converge (find a solution) if the data is linearly separable, meaning there exists a hyperplane that can perfectly separate the classes. 
+                        If the data is not linearly separable, the algorithm may oscillate or fail to converge, as it cannot find a hyperplane that correctly classifies all examples.
+                   </p>
+                   <p><span class="sub-heading">Improved Generalization:<br> </span>The basic perceptron model has limitations in its ability to generalize to new, unseen data. Extensions to the perceptron, such as adding a bias term or using kernel functions, can improve its generalization performance.
+                     The bias term allows the hyperplane to shift, while kernel functions can map the data to a higher-dimensional space where it becomes linearly separable.
+
+                    </p>
+                    <p><span class="sub-heading">Limitations of the Perceptron:<br> </span>Despite its simplicity and interpretability, the perceptron has several limitations.
+                         It is limited to linearly separable problems and cannot model complex, non-linear decision boundaries. Additionally, the perceptron algorithm can be sensitive to the initial weight values and the order in which the training examples are presented. More complex models, such as multi-layer neural networks, are often used to overcome these limitations.
+                    </p>
+                
+                    <br>
+                </div>
+
+                <div id="PracticalIssues">
+                            <h1 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px; margin-top: 50px;">Practical Issues</h1>
+                            
+                            <p><span class="sub-heading">Importance of Good Features:<br></span> The performance of machine learning algorithms heavily relies on the quality of the input features. Good features should be informative, meaning they capture relevant patterns and characteristics of the data that are useful for the learning task. They should also be non-redundant, providing unique and complementary information.
+                                 Selecting good features is crucial for achieving high predictive performance and generalization.
+                            </p>
+                            <p><span class="sub-heading">Irrelevant and Redundant Features: <br></span>Irrelevant features are those that have no predictive power or relationship with the target variable, essentially introducing noise into the model. Redundant features, on the other hand, provide the same information as other features, offering no additional value.
+                                 Including irrelevant or redundant features can lead to overfitting, increased computational complexity, and degraded model performance.
+                            </p>
+                            <p><span class="sub-heading">Feature Pruning and Normalization: <br></span>Feature pruning refers to the process of selecting a subset of relevant features from the original feature set.
+                                 This can be done using filter methods (e.g., mutual information, correlation), wrapper methods (e.g., recursive feature elimination), or embedded methods (e.g., regularization). Normalization techniques, such as min-max scaling or z-score standardization, are used to transform features to a common scale, which can improve the performance of certain algorithms and prevent features with larger scales from dominating the learning process.
+
+                            </p>
+                            <p><span class="sub-heading">Combinatorial Feature Explosion: <br></span>As the number of raw features increases, the number of potential combinations of features (e.g., interactions, polynomials) grows exponentially, leading to a combinatorial explosion of possible features. This can make feature selection and model training computationally expensive and prone to overfitting.
+                                 Techniques like feature hashing or explicit feature maps can be used to address this issue.
+                            </p>
+                            <p><span class="sub-heading">Evaluating Model Performance: <br></span>To assess the performance of a machine learning model, various evaluation metrics can be used, such as accuracy, precision, recall, F1-score, mean squared error, or area under the ROC curve (AUC-ROC).
+                                 The choice of metric depends on the specific learning task (e.g., classification, regression) and the relative importance of different types of errors.
+
+                           </p>
+                           <p><span class="sub-heading">Cross-Validation: <br></span>Cross-validation is a technique used to estimate the generalization performance of a machine learning model. The data is split into training and validation sets, and the model is trained on the training set and evaluated on the validation set. This process is repeated multiple times, with different splits of the data, and the results are averaged.
+                             Cross-validation helps to prevent overfitting and provides a more reliable estimate of model performance.
+                            </p>
+                            <p><span class="sub-heading">Hypothesis Testing and Statistical Significance: <br></span>Statistical hypothesis testing and measures of statistical significance, such as p-values, are used to assess the reliability and generalizability of the model's performance. Hypothesis tests can determine if the observed performance is statistically significantly different from a null hypothesis (e.g., random guessing).
+                                 Statistical significance helps to quantify the confidence in the model's predictive ability.
+                            </p>
+                            <p><span class="sub-heading">Debugging Learning Algorithms: <br></span>Debugging learning algorithms can be challenging due to the complexity of the models and the potential for issues like overfitting or data quality problems. Strategies like visualizing the decision boundaries, inspecting the learned weights or parameters, and analyzing the model's performance on specific examples can help identify and resolve issues.
+                                 Techniques like dimensionality reduction (e.g., PCA, t-SNE) can also aid in visualizing and understanding the data and model behavior.
+                           </p>
+                           <p><span class="sub-heading">Bias-Variance Tradeoff: <br></span>The bias-variance tradeoff is a fundamental concept in machine learning. Bias refers to the error introduced by making simplifying assumptions in the model, leading to underfitting (high bias, low variance).
+                             Variance refers to the model's sensitivity to small fluctuations in the training data, leading to overfitting (low bias, high variance). Finding the right balance between bias and variance through techniques like regularization, model complexity adjustment, or ensemble methods is crucial for optimal model performance.
+
+                            </p>
+                            <br>
+                            
+                </div>
+
+                <div id="LinearModels" >
+                            <h2 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px; margin-top: 50px;">Linear Models</h2>
+                            <h5 style="font-size: 20px; font-family: Georgia;">Linear models are a fundamental class of machine learning models that aim to find a linear relationship between input features and the target variable.
+                                <br> The general form of a linear model can be expressed as:
+                            </h5>
+                            <h5 style="font-size: 18px; text-align: center; margin-right: 10%; font-weight: bolder;">y = w^T x + b</h5>
+                            <div style="margin-left: 39%; list-style: disc;">
+                                <li>y is the predicted target variable</li>
+                                <li>x is the input feature vector</li>
+                                <li>w is the weight vector</li>
+                                <li>b is the bias term</li>
+                            </div>
+                            <p><span class="sub-heading ">The Optimization Framework for Linear Models:</span>
+                                <li>Linear models assume a linear relationship between the input features and the target variable.</li>
+                                <li>The goal is to find the optimal values of the weight vector (w) and bias term (b) that minimize the loss function.</li>
+                                <li>Linear models are widely used in both regression and classification problems.</li>
+                    
+                            </p>
+
+                            <p><span class="sub-heading ">Convex Surrogate Loss Functions:</span>
+                                <li>In machine learning, the true loss function (e.g., 0-1 loss for classification) is often non-convex and difficult to optimize.</li>
+                                <li>Convex surrogate loss functions provide an upper bound on the true loss and are easier to optimize due to their convex nature.</li>
+                                <li>Examples of convex surrogate losses.</li>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Mean Squared Error (MSE) for regression problems.</p>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Logistic Loss (Cross-Entropy Loss) for binary classification problems.</p>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Softmax Loss (Multinomial Logistic Loss) for multi-class classification problems.</p>
+                                
+                            </p>
+
+                            <p><span class="sub-heading ">Weight Regularization:</span>
+                                <li>Regularization is a technique used to prevent overfitting and improve the generalization ability of machine learning models.</li>
+                                <li>It introduces a penalty term to the loss function, which discourages large weight values and encourages a simpler model.</li>
+                                <li>For example, learning a perfect predictor for a truly random process is not possible, as there is no underlying pattern to be learned.</li>
+                                <li>Common regularization techniques.</li>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">L2 regularization (Ridge Regression): Adds the sum of squared weights scaled by a hyperparameter (lambda) to the loss function.</p>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">L1 regularization (Lasso Regression): Adds the sum of absolute weights scaled by a hyperparameter (lambda) to the loss function.</p>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">L1 regularization can lead to sparse solutions, where some weights are exactly zero, providing feature selection.</p>
+                            </p>
+
+                            <p><span class="sub-heading ">Optimization and Gradient Descent:</span>
+                                <li>Once the loss function and regularization terms are defined, the optimization problem is solved to find the optimal model parameters.</li>
+                                <li>Gradient Descent is a widely used optimization algorithm for machine learning problems.</li>
+                                <li>It iteratively updates the weights in the direction of the negative gradient of the loss function with respect to the weights.</li>
+                                <li>The weight update rule is: w_new = w_old - learning_rate * gradient_of_loss_wrt_w.</li>
+                                <li>The learning rate is a hyperparameter that controls the step size of the updates.</li>
+                                
+                            </p>
+
+                            <p><span class="sub-heading ">Support Vector Machines (SVMs):</span>
+                                <li>SVMs are a type of linear model specifically designed for classification problems.</li>
+                                <li>The goal of SVMs is to find the optimal hyperplane that maximizes the margin between the classes, subject to certain constraints.</li>
+                                <li>The optimization problem for SVMs involves minimizing the L2 norm of the weight vector (||w||^2) while ensuring that all training examples are correctly classified with a certain margin.</li>
+                                <li>SVMs can be extended to non-linear problems using kernel functions, which map the input features to a higher-dimensional space where the classes become linearly separable.</li>
+                                <li>SVMs are known for their good generalization performance and ability to handle high-dimensional data.</li>
+                            </p>
+
+                </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        let rightContainerEl = document.getElementById("rightContainer")
+        let leftContainerEl = document.getElementById("leftContainer");
+        let containerContentEl = document.getElementById("containerContent");
+    function changeColor() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        leftContainerEl.classList.toggle("dark-mode");
+        rightContainerEl.classList.toggle("dark-mode");
+    
+    }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

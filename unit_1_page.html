@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Unit_1_Page</title>
+    <link rel="stylesheet" href="unit_page.css">
+    <style>
+        body {
+          background-color: white;
+          color: black;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="bg-container">
+        <div class="left-container fixed-top" id="leftContainer">
+            <div  class="topics-section-heading-container" >
+                <h1 style="padding-left: 20px; padding-top: 8px;padding-right: 18px; font-size: 28px; text-decoration: underline;">UNIT-1</h1>
+                <div class="toggle-container" onclick="changeColor()">
+                    <input type="checkbox" class="toggle-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 142" class="toggle">
+                      <path d="M71 142C31.7878 142 0 110.212 0 71C0 31.7878 31.7878 0 71 0C110.212 0 119 30 146 30C173 30 182 0 221 0C260 0 292 31.7878 292 71C292 110.212 260.212 142 221 142C181.788 142 173 112 146 112C119 112 110.212 142 71 142Z" class="toggle-background"></path>
+                      <rect rx="6" height="64" width="12" y="39" x="64" class="toggle-icon on"></rect>
+                      <path d="M221 91C232.046 91 241 82.0457 241 71C241 59.9543 232.046 51 221 51C209.954 51 201 59.9543 201 71C201 82.0457 209.954 91 221 91ZM221 103C238.673 103 253 88.6731 253 71C253 53.3269 238.673 39 221 39C203.327 39 189 53.3269 189 71C189 88.6731 203.327 103 221 103Z" fill-rule="evenodd" class="toggle-icon off"></path>
+                      <g filter="url('#goo')">
+                        <rect fill="#fff" rx="29" height="58" width="116" y="42" x="13" class="toggle-circle-center"></rect>
+                        <rect fill="#fff" rx="58" height="114" width="114" y="14" x="14" class="toggle-circle left"></rect>
+                        <rect fill="#fff" rx="58" height="114" width="114" y="14" x="164" class="toggle-circle right"></rect>
+                      </g>
+                      <filter id="goo">
+                        <feGaussianBlur stdDeviation="10" result="blur" in="SourceGraphic"></feGaussianBlur>
+                        <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+                      </filter>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#MLConicalProblems" style="color: white; text-decoration: none;">
+                    Intro to ML <br>
+                        and Canonical Problems
+                    </a>
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#MLConicalProblems"><p>Intro to ML <br>& Canonical Problems</p></a>
+                    <a href="#MLConicalProblems"><p>Classification</p></a>
+                    <a href="#DecisionTreeModelling"><p>Regression</p></a>
+                    <a href="#MLConicalProblems"><p>clustering</p></a>
+                    <a href="#MLConicalProblems"><p>Dimensionality  Reduction</p></a>
+                    <a href="#MLConicalProblems"><p>Recommendation Systems</p></a>
+                </ul>
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#DecisionTreeModelling" style="color: white; text-decoration: none;">
+                        DecisionTree Modelling
+                    </a>
+                    
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#DecisionTreeModelling"><p>Overview</p></a>
+                    <a href="#DecisionTreeModelling"><p>Nodes</p></a>
+                    <a href="#DecisionTreeModelling"><p>Splitting Criteria</p></a>
+                </ul>
+            </div>
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#DecisionTreeModelling" style="color: white; text-decoration: none;">
+                        MachineLearning Limits
+                    </a>
+                    
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#LimitsOfMl"><p>Data Generating Distributions</p></a>
+                    <a href="#LimitsOfMl"><p>Inductive Bias</p></a>
+                    <a href="#LimitsOfMl"><p>Not Everything is Learnable</p></a>
+                    <a href="#LimitsOfMl"><p>Underfitting and Overfitting</p></a>
+                    <a href="#LimitsOfMl"><p>Separation of Training and Test Data</p></a>
+                    <a href="#LimitsOfMl"><p>Models, Parameters, and Hyperparameters</p></a>
+                </ul>
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#Applications" style="color: white; text-decoration: none;">
+                        Real World Applications <br> of ML
+                    </a>
+                    
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#Applications"><p>Computer Vision</p></a>
+                    <a href="#Applications"><p>Natural Language Processing</p></a>
+                    <a href="#Applications"><p>Predictive Analytics</p></a>
+                    <a href="#Applications"><p>Recommendation Systems</p></a>
+                    <a href="#Applications"><p>Fraud Detection</p></a>
+                    <a href="#Applications"><p>Healthcare</p></a>
+                    <a href="#Applications"><p>Other Applications</p></a>
+                    <a href="#Applications"><p>Challenges and Considerations</p></a>
+                </ul>
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#Applications" style="color: white; text-decoration: none;">
+                        Geometry <br>  and Nearest Neighbors
+                    </a>
+                    
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#Geometry"><p>From Data to Feature Vectors</p></a>
+                    <a href="#Geometry"><p>k-Nearest Neighbors (k-NN)</p></a>
+                    <a href="#Geometry"><p>Decision Boundaries</p></a>
+                    <a href="#Geometry"><p>k-means Clustering</p></a>
+                    <a href="#Geometry"><p>High Dimensions</p></a>
+                </ul>
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-danger" style="width: 200px;">
+                    <a href="DS-04 SIA UNIT 1.pdf" target="_blank" style="color: white; text-decoration: none;">
+                     SIA publications Material
+                    </a>
+                    
+                </button>
+                
+            </div>
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-danger" style="width: 200px;">
+                    <a href="DS-04 SIA UNIT 1.pdf" target="_blank" style="color: white; text-decoration: none;">
+                     Rahul publications Material
+                    </a>
+                    
+                </button>
+                
+            </div>
+
+        </div>
+
+        <div class="right-container" id="rightContainer">
+                <div id="MLConicalProblems">
+                    <h1 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px;">Brief Introduction to Machine Learning and Canonical Problems</h1>
+                <h5 style="font-size: 20px;">"Machine learning is a branch of artificial intelligence (AI) that focuses on developing algorithms and techniques to enable computers to learn from data and make predictions or decisions without being explicitly programmed. It encompasses various methods, including supervised learning, unsupervised learning, and reinforcement learning.
+                </h5>
+                <p style="font-size: 18px;">Canonical problems in machine learning refer to fundamental tasks or challenges that frequently arise across different applications. Some common canonical problems include:
+                </p>
+
+                <p><span class="sub-heading">Classification:</span> Assigning input data points to one of several predefined categories. For example, classifying emails as spam or non-spam</p>
+                <p><span class="sub-heading">Regression:</span> Predicting continuous-valued outputs based on input features. For instance, predicting house prices based on features like location, size, and number of bedrooms.
+                </p>
+                <p><span class="sub-heading">Clustering:</span> Grouping similar data points together based on their inherent characteristics. An example is segmenting customers into distinct groups based on their purchasing behavior</p>
+                <p><span class="sub-heading">Dimensionality Reduction: </span>Reducing the number of input variables while preserving the most important information. This is useful for visualizing high-dimensional data or speeding up learning algorithms.
+                </p>
+                <p><span class="sub-heading">Recommendation Systems: </span>Suggesting items or content to users based on their preferences or behavior. Examples include movie recommendations on streaming platforms or product recommendations on e-commerce websites.
+                </p>
+                <p style="font-size: 20px;">
+                    These canonical problems serve as foundational concepts in machine learning and are encountered in a wide range of real-world applications
+                </p>
+                <br>
+                
+
+                <h2 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px;">Canonical Problems in Machine Learning:</h2>
+                <p><span class="sub-heading ">Classification:</span>
+                    
+                    Classification involves categorizing data into predefined classes or categories based on its features.<br>
+                    <span style="color: #24d763;">Example: </span>Spam email detection, where emails are classified as spam or not spam based on their content and characteristics.
+                    </p>
+
+                <p><span class="sub-heading ">Regression:</span>
+                    Regression is the process of predicting a continuous value based on input features.<br>
+                    <span style="color: #24d763;">Example: </span> Predicting house prices based on features such as size, number of bedrooms, location, etc.    
+                </p>
+
+                <p><span class="sub-heading ">Clustering:</span>                      
+                    Clustering involves grouping similar data points together based on their characteristics.<br>
+                    <span style="color: #24d763;">Example: </span> Customer segmentation in marketing, where customers are grouped based on purchasing behavior and demographics.
+                </p>
+
+                <p><span class="sub-heading ">Dimensionality Reduction:</span>
+                    Dimensionality reduction techniques aim to reduce the number of input variables in a dataset while preserving its important features.<br>
+                    <span style="color: #24d763;">Example: </span>
+                    Principal Component Analysis (PCA) for reducing the dimensions of high-dimensional data like images or genetic data.
+                </p>
+
+                <p><span class="sub-heading ">Anomaly Detection:</span>
+                    Anomaly detection identifies unusual patterns or outliers in data that do not conform to expected behavior.<br>
+                    <span style="color: #24d763;">Example: </span>Fraud detection in financial transactions, where unusual spending patterns are flagged as potential fraud.
+                </p>
+
+                <p><span class="sub-heading ">Natural Language Processing (NLP):</span>
+                    NLP deals with the interaction between computers and humans through natural language.<br>
+                    <span style="color: #24d763;">Example: </span>
+                    Sentiment analysis of customer reviews to determine whether they are positive, negative, or neutral.
+                    
+                </p>
+                </div>
+
+                <div id="DecisionTreeModelling">
+                        <h1 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px; margin-top: 50px;">Decision Tree Modelling</h1>
+                        <h2 style="font-size: 20px;  text-align: left; text-decoration: underline;">Decision Tree Model Overview:</h2>
+                        <p style="font-size: 20px;">A decision tree is a supervised learning algorithm used for classification and regression tasks. It partitions the data into subsets based on features and recursively splits these subsets until a stopping criterion is met.
+                        </p>
+                        <p><span class="sub-heading">Structure:</span>A decision tree consists of nodes, branches, and leaves.</p>
+
+                        <h3>Nodes:</h3>
+                        <p><span class="sub-heading">Root Node: </span>Represents the entire dataset and is split into two or more subsets.
+                        </p>
+                        <p><span class="sub-heading">Internal Nodes:</span>Represent feature attributes and are used to split the dataset.</p>
+                        <p><span class="sub-heading">Leaf Nodes: </span>Terminal nodes that represent the output (class label for classification or value for regression).
+                        </p>
+                        <br>
+                        <h2 style="font-size: 20px;  text-align: left; text-decoration: underline;">Splitting Criteria:</h2>
+                        <p><span class="sub-heading">Entropy (H):</span> Measures the impurity or randomness in a dataset.
+                        </p>
+                        
+                        <p style="font-size: 20px;">
+                            These canonical problems serve as foundational concepts in machine learning and are encountered in a wide range of real-world applications
+                        </p>
+                        <br>
+                        <h1 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px;">Introduction to Machine Learning</h1>
+                        <p style="font-size: 20px;">
+                            Machine learning is a subset of artificial intelligence that focuses on the development of algorithms that allow computers to learn and improve from experience without being explicitly programmed. In other words, it enables computers to automatically learn and make decisions based on data. The goal of machine learning is to develop models that can generalize patterns from data to make predictions or decisions.
+                        </p>
+    
+                        <h3>Canonical Problems in Machine Learning:</h3>
+                        <p><span class="sub-heading ">Classification:</span>
+                            
+                            Classification involves categorizing data into predefined classes or categories based on its features.<br>
+                            <span style="color: #24d763;">Example: </span>Spam email detection, where emails are classified as spam or not spam based on their content and characteristics.
+                            </p>
+    
+                        <p><span class="sub-heading ">Regression:</span>
+                            Regression is the process of predicting a continuous value based on input features.<br>
+                            <span style="color: #24d763;">Example: </span> Predicting house prices based on features such as size, number of bedrooms, location, etc.    
+                        </p>
+    
+                        <p><span class="sub-heading ">Clustering:</span>                      
+                            Clustering involves grouping similar data points together based on their characteristics.<br>
+                            <span style="color: #24d763;">Example: </span> Customer segmentation in marketing, where customers are grouped based on purchasing behavior and demographics.
+                        </p>
+    
+                        <p><span class="sub-heading ">Dimensionality Reduction:</span>
+                            Dimensionality reduction techniques aim to reduce the number of input variables in a dataset while preserving its important features.<br>
+                            <span style="color: #24d763;">Example: </span>
+                            Principal Component Analysis (PCA) for reducing the dimensions of high-dimensional data like images or genetic data.
+                        </p>
+    
+                        <p><span class="sub-heading ">Anomaly Detection:</span>
+                            Anomaly detection identifies unusual patterns or outliers in data that do not conform to expected behavior.<br>
+                            <span style="color: #24d763;">Example: </span>Fraud detection in financial transactions, where unusual spending patterns are flagged as potential fraud.
+                        </p>
+    
+                        <p><span class="sub-heading ">Natural Language Processing (NLP):</span>
+                            NLP deals with the interaction between computers and humans through natural language.<br>
+                            <span style="color: #24d763;">Example: </span>
+                            Sentiment analysis of customer reviews to determine whether they are positive, negative, or neutral.
+                            
+                        </p>
+                </div>
+
+                <div id="LimitsOfMl" >
+                        <h2 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px; margin-top: 50px;">Limits of Learning:</h2>
+                        <p><span class="sub-heading ">Data Generating Distributions:</span>
+                            <li>Machine learning algorithms make assumptions about the underlying distribution of the data, which may not always hold true in real-world scenarios.</li>
+                            <li>Understanding the data-generating process is crucial for selecting appropriate models and algorithms, as well as assessing their performance and limitations.</li>
+                            <li>For example, many algorithms assume that the data is independent and identically distributed (i.i.d.), which may not be the case in time-series or spatial data.</li>
+                
+                        </p>
+
+                        <p><span class="sub-heading ">Inductive Bias:</span>
+                            <li>Inductive bias refers to the set of assumptions or constraints that a learning algorithm uses to generalize from the training data to unseen data.</li>
+                            <li>Different algorithms have different inductive biases, which can affect their ability to learn certain types of patterns or relationships.</li>
+                            <li>For example, linear models have a bias towards linear relationships, while decision trees have a bias towards axis-aligned decision boundaries.</li>
+                            <li>Choosing an algorithm with an appropriate inductive bias for the problem at hand is crucial for successful learning.</li>
+                        </p>
+
+                        <p><span class="sub-heading ">Not Everything is Learnable:</span>
+                            <li>Some problems or concepts may be fundamentally difficult or impossible to learn from data, even with an unlimited amount of training data and computational resources.</li>
+                            <li>This can be due to factors such as the complexity of the problem, the lack of relevant features in the data, or the presence of noise or uncertainty.</li>
+                            <li>For example, learning a perfect predictor for a truly random process is not possible, as there is no underlying pattern to be learned.</li>
+                            
+                        </p>
+
+                        <p><span class="sub-heading ">Underfitting and Overfitting:</span>
+                            <li>Underfitting occurs when a model is too simple and fails to capture the underlying patterns in the data, resulting in high bias and poor performance on both training and test data.</li>
+                            <li>Overfitting occurs when a model is too complex and captures noise or irrelevant patterns in the training data, resulting in high variance and poor generalization to unseen data.</li>
+                            <li>Finding the right balance between underfitting and overfitting is a key challenge in machine learning, often addressed through techniques like regularization, cross-validation, and ensemble methods.</li>
+                            
+                        </p>
+
+                        <p><span class="sub-heading ">Separation of Training and Test Data:</span>
+                            <li>To accurately assess the performance and generalization ability of a machine learning model, it is essential to separate the available data into training and test sets.</li>
+                            <li>The training set is used to build and optimize the model, while the test set, which is unseen during training, is used to evaluate the model's performance on new, unseen data.</li>
+                            <li>Failing to properly separate training and test data can lead to overly optimistic performance estimates and poor generalization.</li>
+                            
+                        </p>
+
+                        <p><span class="sub-heading ">Models, Parameters, and Hyperparameters:</span>
+                            <li>A model is the overall structure or algorithm used for learning, such as linear regression, decision trees, or neural networks.</li>
+                            <li>Parameters are the values or weights learned by the model from the training data, such as the coefficients in a linear regression model or the weights in a neural network.</li>
+                            <li>Hyperparameters are the settings or configurations that control the learning process, such as the learning rate in gradient descent or the regularization strength in regularized models.</li>
+                            <li>Choosing appropriate hyperparameters is crucial for achieving good performance and avoiding issues like underfitting or overfitting.</li>
+                        </p>
+                </div>
+
+                <div id="Applications">
+                        <h2 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px; margin-top: 50px;">Real-World Applications of Machine Learning</h2>
+                            <p> <span class="sub-heading">Computer Vision:</span> 
+                            <li>Object detection, image recognition, segmentation.</li>
+                            <li>Applications: Self-driving cars, medical imaging, security systems.</li>
+                            </p>
+
+                            <p> <span class="sub-heading">Natural Language Processing:</span> 
+                                <li>Text classification, sentiment analysis, machine translation, language generation.</li>
+                                <li>Applications: Spam detection, virtual assistants, content recommendation.</li>
+                            </p>
+
+                            <p> <span class="sub-heading">Predictive Analytics:</span> 
+                                <li>Regression, time series analysis.</li>
+                                <li>Applications: Stock market prediction, sales forecasting, supply chain optimization.</li>
+                            </p>
+
+                            <p> <span class="sub-heading">Recommendation Systems:</span> 
+                                <li>Collaborative filtering, content-based filtering.</li>
+                                <li>Applications: Movie, product, music recommendations</li>
+                            </p>
+
+                            <p> <span class="sub-heading">Fraud Detection:</span> 
+                                <li>Anomaly detection, pattern recognition.</li>
+                                <li>Applications: Credit card fraud, network security, identity verification.</li>
+                            </p>
+
+                            <p> <span class="sub-heading">Healthcare:</span> 
+                                <li>Diagnosis prediction, drug discovery, patient data analysis.</li>
+                                <li>Applications: Disease risk assessment, personalized medicine, clinical decision support.</li>
+                            </p>
+
+                            <p> <span class="sub-heading">Other Applications:</span> 
+                                <li>Speech recognition, robotic control, game playing, social network analysis, and many more.</li>
+                            </p>
+
+                            <p> <span class="sub-heading">Challenges and Considerations:</span> 
+                                <li>Data quality and availability.</li>
+                                <li>Interpretability and transparency</li>
+                                <li>Ethical concerns (bias, privacy, safety)</li>
+                                <li>Integration with existing systems and processes</li>
+                            </p>
+                </div>
+
+                <div id="Geometry">
+                        <h2 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px; margin-top: 50px;">Geometry and Nearest Neighbors</h2>
+                            <p> <span class="sub-heading">From Data to Feature Vectors</span> 
+                            <li>Data is often represented as feature vectors in machine learning.</li>
+                            <li>Feature vectors are numerical representations of the data instances.</li>
+                            <li>Each feature corresponds to a measurable property or characteristic of the instance</li>
+                            <li>Feature engineering is the process of selecting, extracting, and transforming relevant features from raw data</li>
+                            </p>
+
+                            <p> <span class="sub-heading">k-Nearest Neighbors (k-NN)</span> 
+                                <li>k-NN is a non-parametric, instance-based learning algorithm</li>
+                                <li>For classification, it assigns a new instance to the majority class among its k nearest neighbors in the feature space.</li>
+                                <li>For regression, it predicts the average or weighted average of the k nearest neighbors.</li>
+                                <li>The choice of k and the distance metric (e.g., Euclidean, Manhattan) are important parameters.</li>
+                                <li>Advantages: Simple, effective for non-linear problems, and adaptive to changes in the data</li>
+                                <li>Disadvantages: Computationally expensive for large datasets, sensitive to irrelevant features, and requires careful parameter selection</li>
+                            </p>
+
+                            <p> <span class="sub-heading">Decision Boundaries</span> 
+                                <li>Decision boundaries separate the feature space into regions corresponding to different classes or outputs.</li>
+                                <li>In binary classification, the decision boundary is a surface or curve that separates the two classes.</li>
+                                <li>For k-NN, the decision boundaries are complex and depend on the value of k and the distribution of the data</li>
+                                <li>Linear models (e.g., logistic regression) have linear decision boundaries</li>
+                                <li>Non-linear models (e.g., support vector machines, neural networks) can have more complex decision boundaries</li>
+                            </p>
+
+                            <p> <span class="sub-heading">k-means Clustering</span> 
+                                <li>k-means is a popular unsupervised learning algorithm for clustering</li>
+                                <li>It partitions the data into k clusters by iteratively assigning instances to the nearest cluster centroid and updating the centroids</li>
+                                <li>The objective is to minimize the sum of squared distances between instances and their assigned cluster centroids</li>
+                                <li>Initialization, choice of k, and distance metric are important factors</li>
+                                <li>Applications include customer segmentation, anomaly detection, and dimensionality reduction</li>
+                            </p>
+
+                            <p> <span class="sub-heading">High Dimensions</span> 
+                                <li>Many real-world datasets have high-dimensional feature spaces.</li>
+                                <li>As the number of dimensions increases, data becomes sparse in the feature space (curse of dimensionality).</li>
+                                <li>Euclidean distances become less discriminative, and nearest neighbor methods can break down</li>
+                                <li>Dimensionality reduction techniques (e.g., PCA, t-SNE) can help mitigate this issue</li>
+                                <li>Techniques like random projection and locality-sensitive hashing can improve efficiency in high dimensions</li>
+                                <li>Feature selection and regularization are important to prevent overfitting in high-dimensional spaces</li>
+                            </p>
+                </div>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        let rightContainerEl = document.getElementById("rightContainer")
+        let leftContainerEl = document.getElementById("leftContainer");
+        let containerContentEl = document.getElementById("containerContent");
+    function changeColor() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        leftContainerEl.classList.toggle("dark-mode");
+        rightContainerEl.classList.toggle("dark-mode");
+    
+    }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

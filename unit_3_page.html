@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Unit_3_Page</title>
+    <link rel="stylesheet" href="unit_page.css">
+    <style>
+        body {
+          background-color: white;
+          color: black;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="bg-container">
+        <div class="left-container fixed-top" id="leftContainer">
+            <div  class="topics-section-heading-container" >
+                <h1 style="padding-left: 20px; padding-top: 8px;padding-right: 18px; font-size: 28px; text-decoration: underline;">UNIT-3</h1>
+                <div class="toggle-container" onclick="changeColor()" >
+                    <input type="checkbox" class="toggle-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 142" class="toggle">
+                      <path d="M71 142C31.7878 142 0 110.212 0 71C0 31.7878 31.7878 0 71 0C110.212 0 119 30 146 30C173 30 182 0 221 0C260 0 292 31.7878 292 71C292 110.212 260.212 142 221 142C181.788 142 173 112 146 112C119 112 110.212 142 71 142Z" class="toggle-background"></path>
+                      <rect rx="6" height="64" width="12" y="39" x="64" class="toggle-icon on"></rect>
+                      <path d="M221 91C232.046 91 241 82.0457 241 71C241 59.9543 232.046 51 221 51C209.954 51 201 59.9543 201 71C201 82.0457 209.954 91 221 91ZM221 103C238.673 103 253 88.6731 253 71C253 53.3269 238.673 39 221 39C203.327 39 189 53.3269 189 71C189 88.6731 203.327 103 221 103Z" fill-rule="evenodd" class="toggle-icon off"></path>
+                      <g filter="url('#goo')">
+                        <rect fill="#fff" rx="29" height="58" width="116" y="42" x="13" class="toggle-circle-center"></rect>
+                        <rect fill="#fff" rx="58" height="114" width="114" y="14" x="14" class="toggle-circle left"></rect>
+                        <rect fill="#fff" rx="58" height="114" width="114" y="14" x="164" class="toggle-circle right"></rect>
+                      </g>
+                      <filter id="goo">
+                        <feGaussianBlur stdDeviation="10" result="blur" in="SourceGraphic"></feGaussianBlur>
+                        <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+                      </filter>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#Perceptron" style="color: white; text-decoration: none;">
+                        Probabilistic Modeling
+                    </a>
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#DensityEstimation"><p>Classification by Density Estimationg</p></a>
+                    <a href="#StatisticalEstimationML"><p>Statistical Estimation</p></a>
+                    <a href="#NaiveBayesModels"><p>Naïve Bayes Models</p></a>
+                    <a href="#Prediction"><p>Prediction</p></a>
+                </ul>
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#PracticalIssues" style="color: white; text-decoration: none;">
+                        Neural Networks 
+                    </a>
+                    
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#bioInspired"><p>Bio-inspired Multi-Layer Networks</p></a>
+                    <a href="#Back-propagationAlgorithm"><p>Back-propagation Algorithm</p></a>
+                    <a href="#Initialization&Convergence"><p>Initialization & Convergence</p></a>
+                    <a href="#beyondtwolayers"><p>Beyond Two Layers</p></a>
+                    <a href="#breadthdepth"><p>Breadth vs. Depth</p></a>
+                    <a href="#BasisFunctions"><p>Basis Functions</p></a>
+
+                </ul>
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-danger" style="width: 200px;">
+                    <a href="DS-04 SIA UNIT-III.pdf" target="_blank" style="color: white; text-decoration: none;">
+                     SIA publications Material
+                    </a>
+                    
+                </button>
+            </div>
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-danger" style="width: 200px;">
+                    <a href="UNIT-3-ML__RP.pdf" target="_blank" style="color: white; text-decoration: none;">
+                     RAHUL publications Material
+                    </a>
+                    
+                </button>
+                
+            </div>
+
+        </div>
+
+        <div class="right-container" id="rightContainer">
+                <div id="ProbabilisticModeling">
+                    <h1 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px;">Probabilistic Modeling</h1>
+
+                    <div id="DensityEstimation">
+                        <p><span class="sub-heading ">Classification by Density Estimation:</span>
+                            <li>This approach involves estimating the probability density function (PDF) or probability mass function (PMF) for each class in the data.</li>
+                            <li>During prediction, the new data point is assigned to the class with the highest estimated probability density or mass.</li>
+                            <li>Common density estimation techniques include Gaussian mixture models, kernel density estimation, and histograms.</li>
+                            <li>In machine learning, density estimation is often used for solving classification problems, where the goal is to assign a class label to a given input instance.</li>
+                            <li>The density estimation approach involves modeling the class-conditional probability density functions (PDFs) or probability mass functions (PMFs) for each class using the training data.</li>
+                            <li>Common density estimation techniques used in machine learning include</li>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Gaussian Mixture Models (GMMs): A flexible and powerful method that models the class-conditional densities as a mixture of Gaussian distributions.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Kernel Density Estimation (KDE): A non-parametric method that estimates the density function by summing kernel functions (e.g., Gaussian kernels) centered at each data point.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Parzen Window Density Estimation: A variant of KDE that uses a different kernel function, such as the Epanechnikov kernel.</p>
+                            <li>Once the class-conditional densities are estimated, an instance is classified by applying Bayes' theorem and assigning it to the class with the highest posterior probability.</li>
+                            <p><span class="mini-sub-heading ">Advantages:</span>
+                                <li>Can handle complex decision boundaries, provide probability estimates, and deal with missing data naturally.</li>
+                            </p>
+                            <p><span class="mini-sub-heading ">Limitations:</span>
+                                <li> Density estimation can be computationally expensive, especially for high-dimensional data, and the performance depends on the accuracy of the density estimates.</li>
+                            </p>
+                        </p>
+                    </div>
+
+                    <div id="StatisticalEstimationML">
+                        <p><span class="sub-heading ">Statistical Estimation in Machine Learning:</span>
+                            <li>Statistical estimation plays a crucial role in machine learning, as it is used for learning the parameters of various models from data.</li>
+                            <li>Maximum Likelihood Estimation (MLE).</li>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">A widely used method for estimating the parameters of probabilistic models, such as linear regression, logistic regression, and neural networks.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">The goal is to find the parameter values that maximize the likelihood function, which represents the probability of observing the data given the parameters.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Optimization algorithms like gradient descent are used to find the maximum likelihood estimates.</p>
+                            
+                            <p><span class="mini-sub-heading ">Bayesian Estimation:</span>
+                                <li>Incorporates prior knowledge about the parameters through a prior distribution, and updates the prior with data to obtain the posterior distribution.</li>
+                                <li>Common techniques include Markov Chain Monte Carlo (MCMC) methods and variational inference.</li>
+                                <li>Bayesian estimation is particularly useful when dealing with small datasets, regularization, and uncertainty quantification.</li>
+                            </p>
+                            <p><span class="mini-sub-heading ">Ensemble Methods:</span>
+                                <li>Statistical estimation is also used in ensemble methods, such as bagging and boosting, where multiple models are trained and combined to improve prediction accuracy and robustness.</li>
+                                <li>For example, in random forests, the individual decision trees are trained on bootstrap samples of the data, and the ensemble prediction is made by aggregating the predictions of the individual trees.</li>
+                            </p>
+                        </p>
+                    </div>
+
+                    <div id="NaiveBayesModels">
+                        <p><span class="sub-heading ">Naive Bayes Models in Machine Learning:</span>
+                            <li>Naive Bayes models are a family of probabilistic classifiers based on the Bayes' theorem and the assumption of feature independence.</li>
+                            <li>Despite the strong independence assumption, Naive Bayes models often perform surprisingly well in various machine learning tasks, such as text classification, spam filtering, and anomaly detection.</li>
+                            <li>Common variants used in machine learning include:</li>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Gaussian Naive Bayes: Assumes continuous features follow a Gaussian (normal) distribution.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Multinomial Naive Bayes: Suitable for discrete data, such as text classification, where feature values represent the frequency of words or tokens.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Complement Naive Bayes: Accounts for feature values that are not present in the instance.</p>
+                            
+                            <p><span class="mini-sub-heading ">Advantages:</span>
+                                <li>Simple, fast, effective for high-dimensional data, interpretable models, and handles missing data naturally.</li>
+                            </p>
+                            <p><span class="mini-sub-heading ">Limitations:</span>
+                                <li>The independence assumption is often violated in real-world data, and the model's performance can degrade when features are highly correlated.</li>
+                            </p>
+                        </p>
+                    </div>
+
+                    <div id="Prediction">
+                        <p><span class="sub-heading ">Prediction in Machine Learning:</span>
+                            <li>Prediction is a fundamental task in machine learning, where the goal is to estimate or forecast future values or events based on past or current data.</li>
+                            <li>Supervised Learning for Prediction:</li>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Regression models (e.g., linear regression, decision trees, support vector regression) are used for predicting continuous target variables.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Classification models (e.g., logistic regression, random forests, neural networks) are used for predicting categorical target variables.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">These models learn patterns from labeled training data and make predictions on new, unseen instances.</p>
+                            
+                            <p><span class="mini-sub-heading ">Unsupervised Learning for Prediction: <br></span>
+                                <li>Clustering algorithms (e.g., k-means, DBSCAN, hierarchical clustering) can be used for predicting cluster assignments or detecting anomalies.</li>
+                                <li>Dimensionality reduction techniques (e.g., PCA, t-SNE) can be used for predicting lower-dimensional representations of high-dimensional data.</li>
+                            </p>
+                            <p><span class="mini-sub-heading ">Time Series Forecasting:</span>
+                                <li>Techniques like ARIMA models, exponential smoothing, and recurrent neural networks (e.g., LSTMs) are used for predicting future values in time-dependent data.</li>
+                                <li>These models capture temporal patterns and dependencies in the data to make accurate forecasts.</li>
+                            </p>
+                        </p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <p><span class="sub-heading ">The Optimization Framework for Linear Models:</span>
+                        <li>Linear models assume a linear relationship between the input features and the target variable.</li>
+                        <li>The goal is to find the optimal values of the weight vector (w) and bias term (b) that minimize the loss function.</li>
+                        <li>Linear models are widely used in both regression and classification problems.</li>
+            
+                    </p>
+                    <p><span class="sub-heading ">The Optimization Framework for Linear Models:</span>
+                        <li>Linear models assume a linear relationship between the input features and the target variable.</li>
+                        <li>The goal is to find the optimal values of the weight vector (w) and bias term (b) that minimize the loss function.</li>
+                        <li>Linear models are widely used in both regression and classification problems.</li>
+            
+                    </p>
+                    <p><span class="sub-heading ">The Optimization Framework for Linear Models:</span>
+                        <li>Linear models assume a linear relationship between the input features and the target variable.</li>
+                        <li>The goal is to find the optimal values of the weight vector (w) and bias term (b) that minimize the loss function.</li>
+                        <li>Linear models are widely used in both regression and classification problems.</li>
+            
+                    </p>
+                    <p><span class="sub-heading">Perceptron Convergence and Linear Separability:<br> </span>The perceptron algorithm is guaranteed to converge (find a solution) if the data is linearly separable, meaning there exists a hyperplane that can perfectly separate the classes. 
+                        If the data is not linearly separable, the algorithm may oscillate or fail to converge, as it cannot find a hyperplane that correctly classifies all examples.
+                   </p>
+                   <p><span class="sub-heading">Improved Generalization:<br> </span>The basic perceptron model has limitations in its ability to generalize to new, unseen data. Extensions to the perceptron, such as adding a bias term or using kernel functions, can improve its generalization performance.
+                     The bias term allows the hyperplane to shift, while kernel functions can map the data to a higher-dimensional space where it becomes linearly separable.
+
+                    </p>
+                    <p><span class="sub-heading">Limitations of the Perceptron:<br> </span>Despite its simplicity and interpretability, the perceptron has several limitations.
+                         It is limited to linearly separable problems and cannot model complex, non-linear decision boundaries. Additionally, the perceptron algorithm can be sensitive to the initial weight values and the order in which the training examples are presented. More complex models, such as multi-layer neural networks, are often used to overcome these limitations.
+                    </p>
+                
+                    <br>
+                </div>
+
+                <div id="NeuralNetworks">
+                            <h1 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px; margin-top: 50px;">Neural Networks </h1>
+                            <h5>Neural Networks are a powerful class of machine learning models inspired by the structure and function of biological neural networks in the brain. Here's a detailed overview of the topics you mentioned:</h5>
+                            
+                            <div id="bioInspired">
+                                <p><span class="sub-heading ">Bio-inspired Multi-Layer Networks: <br></span>
+                                    <li>Neural networks are composed of interconnected nodes called neurons, organized into layers: input layer, hidden layers, and output layer.</li>
+                                    <li>Each neuron receives input signals from the previous layer, performs a weighted sum of these inputs, applies a non-linear activation function (e.g., sigmoid, ReLU), and passes the output to the next layer.</li>
+                                    <li>Multi-layer networks, with one or more hidden layers, enable the learning of complex non-linear functions and representations from data.</li>
+                                    <li>The interconnections between neurons are associated with adjustable weights, which are learned from data during the training process.</li>
+                                </p>
+                            </div>
+
+                            <div id="Back-propagationAlgorithm"> 
+                                <p><span class="sub-heading ">The Back-propagation Algorithm: <br></span>
+                                    <li>Back-propagation is a supervised learning algorithm used to train multi-layer neural networks.</li>
+                                    <li>It is based on the idea of propagating the error from the output layer back to the input layer, adjusting the weights to minimize the error.</li>
+                                    <li>The algorithm computes the gradient of the error with respect to the weights using the chain rule of calculus, a process known as "back-propagation of errors."</li>
+                                    <li>Optimization algorithms like stochastic gradient descent (SGD) or variants (e.g., Adam, RMSProp) are used to update the weights iteratively based on the computed gradients.</li>
+                                    <li>Back-propagation allows neural networks to learn complex representations and mappings from data, making them powerful function approximators.</li>
+                                </p>
+                            </div>
+
+                            <div id="Initialization&Convergence">
+                                <p><span class="sub-heading ">Initialization and Convergence of Neural Networks: <br></span>
+                                    <li>Proper initialization of the neural network weights is crucial for efficient training and convergence</li>
+                                    <li>Common initialization techniques include random initialization (e.g., Xavier, He initialization), which aim to break the symmetry and prevent vanishing or exploding gradients.</li>
+                                    <li>Convergence of the training process depends on various factors, including the choice of optimization algorithm, learning rate, batch size, and the complexity of the problem.</li>
+                                    <li>Techniques like momentum, learning rate schedules, and early stopping can improve convergence and prevent overfitting.</li>
+                                    <li>Monitoring the training and validation loss curves can provide insights into the convergence behavior and help diagnose issues like overfitting or underfitting.</li>
+                                </p>
+                            </div>
+
+                            <div id="beyondtwolayers">
+                                <p><span class="sub-heading ">Beyond Two Layers: <br></span>
+                                    <li>While shallow neural networks (with one or two hidden layers) can approximate simple functions, deep neural networks with multiple hidden layers are more powerful and can model highly complex and hierarchical representations.</li>
+                                    <li>Deep networks can automatically learn feature representations at different levels of abstraction, from low-level features to high-level concepts.</li>
+                                    <li>However, training deep networks can be challenging due to issues like vanishing or exploding gradients, which can be mitigated by techniques like batch normalization, residual connections, and careful initialization.</li>
+                                    <li>Architectures like convolutional neural networks (CNNs) and recurrent neural networks (RNNs) are examples of deep networks tailored for specific types of data, such as images and sequences, respectively.</li>
+                                </p>
+                            </div>
+
+                            <div id="breadthdepth">
+                                <p><span class="sub-heading ">Breadth vs. Depth: <br></span>
+                                    <li>The breadth of a neural network refers to the number of neurons or units in each layer, while the depth refers to the number of hidden layers.</li>
+                                    <li>Increasing the breadth (width) of a network can improve its capacity to learn complex functions but may also increase the risk of overfitting and computational complexity.</li>
+                                    <li>Increasing the depth (number of hidden layers) can enable the network to learn more abstract and hierarchical representations, but it also introduces challenges like vanishing/exploding gradients and optimization difficulties.</li>
+                                    <li>The trade-off between breadth and depth is often problem-specific, and various techniques like dropout, batch normalization, and skip connections can help mitigate the challenges associated with increasing either breadth or depth.</li>
+                                </p>
+                            </div>
+
+                            <div id="BasisFunctions">
+                                <p><span class="sub-heading ">Basis Functions:<br></span>
+                                    <li>Basis functions are a set of functions that can be linearly combined to approximate or represent other functions.</li>
+                                    <li>In neural networks, the activation functions of the neurons can be viewed as basis functions, and the network learns to combine these basis functions to approximate the desired mapping or function.</li>
+                                    <li>Common activation functions used as basis functions include sigmoid, tanh, ReLU (Rectified Linear Unit), and variants like Leaky ReLU and ELU (Exponential Linear Unit).</li>
+                                    <li>The choice of activation functions (basis functions) can impact the ability of the network to learn certain types of functions and can also affect the convergence behavior during training.</li>
+                                    <li>Techniques like basis function initialization and adaptive basis function selection have been explored to improve the performance and convergence of neural networks.</li>
+                                </p>
+                            </div>
+                            
+                            
+                            <br>
+                            
+                </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        let rightContainerEl = document.getElementById("rightContainer")
+        let leftContainerEl = document.getElementById("leftContainer");
+        let containerContentEl = document.getElementById("containerContent");
+    function changeColor() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        leftContainerEl.classList.toggle("dark-mode");
+        rightContainerEl.classList.toggle("dark-mode");
+    
+    }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

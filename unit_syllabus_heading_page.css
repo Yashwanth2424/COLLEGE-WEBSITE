@@ -1,0 +1,33 @@
+.bg-container {
+   background-color: #F9EBFF;
+    height: 400vh;
+}
+
+.unit-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.unit-page-inner-container-1 {
+    width: 30%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.unit-page-inner-container-2 {
+    width: 30%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.unit-page-inner-container-3 {
+    width: 30%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-container {
+    color: rgb(2, 92, 14);
+    font-size: large;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Unit_4_Page</title>
+    <link rel="stylesheet" href="unit_page.css">
+    <style>
+        body {
+          background-color: white;
+          color: black;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="bg-container">
+        <div class="left-container fixed-top" id="leftContainer">
+            <div  class="topics-section-heading-container" >
+                <h1 style="padding-left: 20px; padding-top: 8px;padding-right: 18px; font-size: 28px; text-decoration: underline;">UNIT-4</h1>
+                <div class="toggle-container" onclick="changeColor()" >
+                    <input type="checkbox" class="toggle-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 142" class="toggle">
+                      <path d="M71 142C31.7878 142 0 110.212 0 71C0 31.7878 31.7878 0 71 0C110.212 0 119 30 146 30C173 30 182 0 221 0C260 0 292 31.7878 292 71C292 110.212 260.212 142 221 142C181.788 142 173 112 146 112C119 112 110.212 142 71 142Z" class="toggle-background"></path>
+                      <rect rx="6" height="64" width="12" y="39" x="64" class="toggle-icon on"></rect>
+                      <path d="M221 91C232.046 91 241 82.0457 241 71C241 59.9543 232.046 51 221 51C209.954 51 201 59.9543 201 71C201 82.0457 209.954 91 221 91ZM221 103C238.673 103 253 88.6731 253 71C253 53.3269 238.673 39 221 39C203.327 39 189 53.3269 189 71C189 88.6731 203.327 103 221 103Z" fill-rule="evenodd" class="toggle-icon off"></path>
+                      <g filter="url('#goo')">
+                        <rect fill="#fff" rx="29" height="58" width="116" y="42" x="13" class="toggle-circle-center"></rect>
+                        <rect fill="#fff" rx="58" height="114" width="114" y="14" x="14" class="toggle-circle left"></rect>
+                        <rect fill="#fff" rx="58" height="114" width="114" y="14" x="164" class="toggle-circle right"></rect>
+                      </g>
+                      <filter id="goo">
+                        <feGaussianBlur stdDeviation="10" result="blur" in="SourceGraphic"></feGaussianBlur>
+                        <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+                      </filter>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#Unsupervisedlearning" style="color: white; text-decoration: none;">
+                        Unsupervised learning
+                    </a>
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#Clustering"><p>Clustering Introduction</p></a>
+                    <a href="#Similarity"><p>Similarity and Distance Measures</p></a>
+                    <a href="#Agglomerative"><p>Agglomerative Algorithms</p></a>
+                    <a href="#DivisiveClustering"><p>Divisive Clustering</p></a>
+                    <a href="#SpanningTree"><p>Minimum Spanning Tree (MST):</p></a>
+                </ul>
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;">
+                    <a href="#AssociationRules" style="color: white; text-decoration: none;">
+                        Association Rules 
+                    </a>
+                    
+                </button>
+                <ul class="dropdown-menu dropdown-container">
+                    <a href="#LargeItemsets"><p>Large Itemsets</p></a>
+                    <a href="#AprioriAlgorithm"><p>Apriori Algorithm</p></a>
+
+                </ul>
+            </div>
+
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-danger" style="width: 200px;">
+                    <a href="DS-04 SIA UNIT-IV.pdf" target="_blank" style="color: white; text-decoration: none;">
+                     SIA publications Material
+                    </a>
+                    
+                </button>
+            </div>
+            <div class="btn-group dropend" style="margin-left: 25px; margin-bottom: 15px;">
+                
+                <button type="button" class="btn btn-danger" style="width: 200px;">
+                    <a href="UNIT-4-ML__RP.pdf" target="_blank" style="color: white; text-decoration: none;">
+                     RAHUL publications Material
+                    </a>
+                    
+                </button>
+                
+            </div>
+
+        </div>
+
+        <div class="right-container" id="rightContainer">
+                <div id="Unsupervisedlearning">
+                    <h1 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px;">Unsupervised learning</h1>
+                    <h5 style="font-size: 20px; font-family: Georgia;">Unsupervised learning is a branch of machine learning that deals with finding patterns and structures in data without relying on labeled examples.
+                        <br> Clustering is a fundamental task in unsupervised learning, where the goal is to group similar data points together based on their inherent characteristics. Let's explore the topics you mentioned in detail:</h5>
+                    <div id="Clustering">
+                        <p><span class="sub-heading ">Clustering Introduction:</span>
+                            <li>Clustering is the process of partitioning a dataset into groups (clusters) such that data points within the same cluster are more similar to each other than to those in other clusters.</li>
+                            <li>It is an exploratory data analysis technique that helps in discovering inherent structures, patterns, and relationships within the data.</li>
+                            <li>Clustering is widely used in various applications, such as customer segmentation, image analysis, anomaly detection, and gene expression analysis.</li>
+                        </p>
+                    </div>
+
+                    <div id="Similarity">
+                        <p><span class="sub-heading ">Similarity and Distance Measures</span>
+                            <li>Similarity and distance measures are crucial in clustering algorithms as they quantify the (dis)similarity between data points.</li>
+                            <li>Common similarity measures include Euclidean distance, Manhattan distance, cosine similarity, and Jaccard similarity.</li>
+                            <li>The choice of similarity or distance measure depends on the nature of the data (continuous, categorical, or mixed) and the underlying assumptions of the clustering algorithm.</li>
+                            
+                        </p>
+                    </div>
+
+                    <div id="Agglomerative">
+                        <p><span class="sub-heading ">Agglomerative Algorithms:</span>
+                            <li>Agglomerative clustering algorithms follow a bottom-up approach, where each data point initially forms its own cluster, and clusters are progressively merged based on their similarity or distance.</li>
+                            <li>Popular agglomerative algorithms include:</li>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Hierarchical Agglomerative Clustering (HAC): Constructs a dendrogram (tree-like structure) that represents the merging of clusters at different levels of similarity.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Single-Link Clustering: Merges clusters based on the minimum distance between any two points in different clusters (sensitive to noise and outliers).</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Complete-Link Clustering: Merges clusters based on the maximum distance between any two points in different clusters (tends to produce compact clusters).</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Average-Link Clustering: Merges clusters based on the average distance between all pairs of points in different clusters.</p>
+                        </p>
+                    </div>
+
+                    <div id="DivisiveClustering">
+                        <p><span class="sub-heading ">Divisive Clustering:</span>
+                            <li>Divisive clustering algorithms follow a top-down approach, where the entire dataset is initially treated as a single cluster, and clusters are recursively divided into smaller clusters based on certain criteria.</li>
+                            <li>Examples of divisive algorithms include:</li>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Bisecting K-means: Recursively divides the data into two clusters based on the K-means algorithm, and the process continues until the desired number of clusters is reached.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">DIANA (Divisive Analysis): Iteratively splits the data based on the maximum diameter (maximum distance between any two points) or other criteria.</p>
+                        </p>
+                    </div>
+
+                    <div id="SpanningTree">
+                        <p><span class="sub-heading ">Minimum Spanning Tree (MST)</span>
+                            <li>The Minimum Spanning Tree (MST) is a concept from graph theory that is used in some clustering algorithms.</li>
+                            <li>An MST is a tree-like structure that connects all the data points in a graph while minimizing the total weight (distance or similarity) of the edges.</li>
+                            <li>Clustering algorithms that utilize MSTs include</li>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Single-Link Clustering: The MST is used to identify connected components, where each connected component forms a cluster.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">OPTICS (Ordering Points To Identify the Clustering Structure): This algorithm uses the MST to order the data points and identify clusters of different densities.</p>
+                            <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">CURE (Clustering Using Representatives): This algorithm uses a combination of MST and representative points to handle large datasets and non-spherical clusters.</p>
+                        </p>
+                    <br>
+                    <h4 style="font-size: 20px; font-family: Georgia;">Unsupervised clustering algorithms are useful when there is no prior knowledge about the structure or labels of the data.
+                         They help in discovering natural groupings, identifying outliers, and visualizing high-dimensional data. However, the choice of clustering algorithm, similarity measure, and algorithm-specific parameters can significantly impact the quality and interpretability of the resulting clusters.
+                         Evaluating and validating the clustering results using internal or external evaluation metrics is crucial in unsupervised learning tasks.</h4>
+                         <br>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <p><span class="sub-heading ">The Optimization Framework for Linear Models:</span>
+                        <li>Linear models assume a linear relationship between the input features and the target variable.</li>
+                        <li>The goal is to find the optimal values of the weight vector (w) and bias term (b) that minimize the loss function.</li>
+                        <li>Linear models are widely used in both regression and classification problems.</li>
+            
+                    </p>
+                    <p><span class="sub-heading ">The Optimization Framework for Linear Models:</span>
+                        <li>Linear models assume a linear relationship between the input features and the target variable.</li>
+                        <li>The goal is to find the optimal values of the weight vector (w) and bias term (b) that minimize the loss function.</li>
+                        <li>Linear models are widely used in both regression and classification problems.</li>
+            
+                    </p>
+                    <p><span class="sub-heading ">The Optimization Framework for Linear Models:</span>
+                        <li>Linear models assume a linear relationship between the input features and the target variable.</li>
+                        <li>The goal is to find the optimal values of the weight vector (w) and bias term (b) that minimize the loss function.</li>
+                        <li>Linear models are widely used in both regression and classification problems.</li>
+            
+                    </p>
+                    <p><span class="sub-heading">Perceptron Convergence and Linear Separability:<br> </span>The perceptron algorithm is guaranteed to converge (find a solution) if the data is linearly separable, meaning there exists a hyperplane that can perfectly separate the classes. 
+                        If the data is not linearly separable, the algorithm may oscillate or fail to converge, as it cannot find a hyperplane that correctly classifies all examples.
+                   </p>
+                   <p><span class="sub-heading">Improved Generalization:<br> </span>The basic perceptron model has limitations in its ability to generalize to new, unseen data. Extensions to the perceptron, such as adding a bias term or using kernel functions, can improve its generalization performance.
+                     The bias term allows the hyperplane to shift, while kernel functions can map the data to a higher-dimensional space where it becomes linearly separable.
+
+                    </p>
+                    <p><span class="sub-heading">Limitations of the Perceptron:<br> </span>Despite its simplicity and interpretability, the perceptron has several limitations.
+                         It is limited to linearly separable problems and cannot model complex, non-linear decision boundaries. Additionally, the perceptron algorithm can be sensitive to the initial weight values and the order in which the training examples are presented. More complex models, such as multi-layer neural networks, are often used to overcome these limitations.
+                    </p>
+                
+                </div>
+
+                <div id="AssociationRules">
+                            <h1 style="font-size: 25px;  text-align: center; font-family: Georgia; font-weight: bold; margin-bottom: 20px; margin-top: 50px;">Introduction:</h1>
+                            <h4 style="font-size: 20px; font-family: Georgia;">An association rule is an implication expression of the form X ⇒ Y, where X and Y are disjoint itemsets.
+                                The rule suggests that the presence of itemset X in a transaction implies the presence of itemset Y with a certain confidence</h4>
+                                <br>
+                                <br>
+                                <p>Association rules are characterized by two important measures:</p>
+
+                                <p><span class="sub-heading ">Support:</span>
+                                    <p>The support of an itemset is the percentage of transactions in the database that contain the itemset.
+                                         The support of the rule X ⇒ Y is the percentage of transactions that contain both X and Y.
+                                    </p>
+                                </p>
+                                <p><span class="sub-heading ">Confidence:</span>
+                                    <p>The confidence of the rule X ⇒ Y is the percentage of transactions that contain Y among those transactions that contain X.
+                                    </p>
+                                </p>
+                            <h5 style="font-size: 20px; font-family: Georgia;">The goal of association rule mining is to find all rules that have support and confidence greater than or equal to the user-specified minimum support and minimum confidence thresholds, respectively.</h5>
+
+
+                            <div id="LargeItemsets">
+                                <p><span class="sub-heading ">Large Itemsets: <br></span>
+                                    <p>The first step in association rule mining is to find all frequent itemsets, which are itemsets that have support above the minimum support threshold.
+                                         This is a computationally expensive step, especially when the number of items in the database is large.
+                                    </p>
+                                    <br>
+                                    <p>The Apriori algorithm is a popular algorithm used for finding frequent itemsets. It is based on the principle that if an itemset is frequent, then all its subsets must also be frequent.
+                                         The algorithm works in an iterative manner, generating candidate itemsets of length k from frequent itemsets of length k-1, and then pruning the candidate itemsets that are not frequent.</p>
+                                </p>
+                            </div>
+
+                            <div id="AprioriAlgorithm"> 
+                                <p><span class="sub-heading ">Apriori Algorithm:<br></span>
+                                    <li>The Apriori algorithm works as follows:</li>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Generate candidate itemsets of length 1 (single items) and count their support.</p>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Prune the candidate itemsets that do not satisfy the minimum support threshold.</p>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Iteratively generate candidate itemsets of length k+1 from frequent itemsets of length k, by joining the frequent itemsets of length k.</p>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Count the support of the candidate itemsets of length k+1.</p>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Prune the candidate itemsets of length k+1 that do not satisfy the minimum support threshold.</p>
+                                    <p style="margin-left: 35px; padding: 0px; margin-bottom: 0px;">Repeat steps 3-5 until no more frequent itemsets are found.</p>
+                                </p>
+                                <p>After finding all frequent itemsets, association rules are generated from these itemsets, and only the rules that satisfy the minimum confidence threshold are kept.</p>
+                                <p>The Apriori algorithm is efficient when the database is not too large, and the minimum support threshold is not too low. However, for large databases or low minimum support thresholds, 
+                                    the algorithm may become computationally expensive due to the large number of candidate itemsets that need to be generated and counted.</p>
+                                
+                                <p>There are several variations and optimizations of the Apriori algorithm, such as the FP-growth algorithm, which uses a different approach to mine frequent itemsets more efficiently</p>
+                            </div>
+
+                            
+                </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        let rightContainerEl = document.getElementById("rightContainer")
+        let leftContainerEl = document.getElementById("leftContainer");
+        let containerContentEl = document.getElementById("containerContent");
+    function changeColor() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        leftContainerEl.classList.toggle("dark-mode");
+        rightContainerEl.classList.toggle("dark-mode");
+    
+    }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
